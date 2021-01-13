@@ -16,24 +16,27 @@ def post_text_image():
     user = input("Enter link to groups, users or pages: ")
     fields = user.split("/")
     if fields[2] == "www.facebook.com":
+        end_trigger = int(input("Enter the number of posts you want to display: "))
         if fields[3] == "groups":
-            for post in get_posts(pages=1, group=fields[4]):
+            for post in list(get_posts(pages=2, group=fields[4]))[:end_trigger]:
                 get = post.get("post_text")
-                post_get = post.get("image")
+                image_get = post.get("image")
                 if post["image"] is not None:
-                    short = Shortener().tinyurl.short(post_get)
-                    print(f'Post Text: {get}\n\nImage: {short}\n')
+                    short = Shortener().tinyurl.short(image_get)
+                    print(f'\nPost Text: {get}\nImage: {short}')
                 else:
-                    print("Post Text:", get, "\n\nImage:", post_get, "\n")
+                    print("\nPost Text:", get, "\nImage:", image_get)
+            print("...")
         else:
-            for post in get_posts(fields[3], pages=1):
+            for post in list(get_posts(fields[3], pages=2))[:end_trigger]:
                 get = post.get("post_text")
-                post_get = post.get("image")
+                image_get = post.get("image")
                 if post["image"] is not None:
-                    short = Shortener().tinyurl.short(post_get)
-                    print(f'Post Text: {get}\n\nImage: {short}\n')
+                    short = Shortener().tinyurl.short(image_get)
+                    print(f'\nPost Text: {get}\nImage: {short}\n')
                 else:
-                    print("Post Text:", get, "\n\nImage:", post_get, "\n")
+                    print("\nPost Text:", get, "\nImage:", image_get, "\n")
+            print("For more posts:", user)
     else:
         print("not a valid facebook link\n")
         post_text_image()
