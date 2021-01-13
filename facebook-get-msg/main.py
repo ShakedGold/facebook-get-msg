@@ -13,5 +13,10 @@ class Encoder(json.JSONEncoder):
 
 user = input("Enter link to page or user: ")
 field = user.split("/")[3]
-for post in get_posts(field, pages=1):
-    print("New Post:\n", json.dumps(post, ensure_ascii=False, cls=Encoder, indent=4), "\n")
+if user.split("/")[2] == "www.facebook.com":
+    for post in get_posts(field, pages=1):
+        print("Post Text:", post["post_text"], "\n", "Image:", post["image"], "\n")
+else:
+    print("not a valid facebook link")
+
+# json.dumps(post, ensure_ascii=False, cls=Encoder, indent=4)
