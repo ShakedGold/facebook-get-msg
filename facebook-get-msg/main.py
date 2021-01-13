@@ -11,12 +11,7 @@ class Encoder(json.JSONEncoder):
             return json.JSONEncoder.default(self, obj)
 
 
-def get_text(posts):
-    for post in posts:
-        yield post['post_text']
-
-
-posts = get_posts("NaftaliBennett", pages=1)
-l = list(get_text(posts))
-dumps = json.dumps(l, indent=4, cls=Encoder, ensure_ascii=False)
-print(dumps)
+user = input("Enter link to page or user: ")
+field = user.split("/")[3]
+for post in get_posts(field, pages=1):
+    print("New Post:\n", json.dumps(post, ensure_ascii=False, cls=Encoder, indent=4), "\n")
