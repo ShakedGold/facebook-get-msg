@@ -1,17 +1,17 @@
 # facebook-get-msg
 A program that shows you specific messages in python
 
-#Used APIs:
+<h1> Used APIs:
 <hr>
 
-###1. Facebook Scraper
-###2. pyshorteners
+<h3> 1. Facebook Scraper
+<h3> 2. pyshorteners
 
 ```python
     from facebook_scraper import get_posts
     from pyshorteners import Shortener
 ```
-##Usage
+<h1> Usage
 <hr>
 
 ```bash
@@ -25,8 +25,10 @@ A program that shows you specific messages in python
 ```
 
 
-###TODO:
+<h2> TODO:
 <hr>
+
+<h3>
 
 - [x] Console Reader
 - [x] Custom Page Number
