@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9eafe72d-b98a-477d-965f-84c44f0a30a6" name="Default Changelist" comment="">
+    <list default="true" id="9eafe72d-b98a-477d-965f-84c44f0a30a6" name="Default Changelist" comment="fixed bugs, limited posts, added link at the end">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/facebook-get-msg/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/facebook-get-msg/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +62,29 @@
       <option name="presentableId" value="Default" />
       <updated>1610564425044</updated>
     </task>
+    <task id="LOCAL-00001" summary="fixed bugs, limited posts, added link at the end">
+      <created>1610571471088</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1610571471088</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="fixed bugs, limited posts, added link at the end" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed bugs, limited posts, added link at the end" />
   </component>
 </project>
